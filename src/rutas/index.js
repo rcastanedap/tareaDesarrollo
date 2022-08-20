@@ -7,7 +7,9 @@ router.get('/', (req, res) => {
     res.render("index", { alumnos });
 });
 
-
+router.get('/about', (req, res) => {
+    res.render("about");
+});
 router.get('/registro-formulario', (req, res) => {
     res.render("registro-formulario");
 });
